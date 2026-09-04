@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f111a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+header p {
+  color: #a0a5b5;
+  margin-top: 5px;
+}
+
+/* Layout 2x2 Grid */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 650px;
+}
+
+/* Card Candidate */
+.card {
+  background-color: #1e2235;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+.vote-btn {
+  width: 100%;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.vote-btn:hover {
+  background-color: #4f46e5;
+}
+
+/* Footer Section */
+.footer-card {
+  width: 100%;
+  max-width: 650px;
+  background-color: #1e2235;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.feedback-box {
+  background-color: #161b2e;
+  padding: 12px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  border: 1px solid #2d3553;
+}

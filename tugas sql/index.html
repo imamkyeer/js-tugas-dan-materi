@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Voting App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>🗳️ Mini Voting App</h1>
+    <p>What should we build next? 🚀</p>
+  </header>
+
+  <!-- Container Kartu Kandidat Grid 2x2 -->
+  <div class="cards-container">
+    
+    <!-- Candidate 1 -->
+    <div class="card">
+      <div class="icon">🎮</div>
+      <h3>Mini Game</h3>
+      <p>Votes: <span id="gameVotes">20</span></p>
+      <button id="btnGame" class="vote-btn">Vote 🎮</button>
+    </div>
+
+    <!-- Candidate 2 -->
+    <div class="card">
+      <div class="icon">🛒</div>
+      <h3>Mini Store</h3>
+      <p>Votes: <span id="storeVotes">19</span></p>
+      <button id="btnStore" class="vote-btn">Vote 🛒</button>
+    </div>
+
+    <!-- Candidate 3 -->
+    <div class="card">
+      <div class="icon">📝</div>
+      <h3>To-Do App</h3>
+      <p>Votes: <span id="todoVotes">18</span></p>
+      <button id="btnTodo" class="vote-btn">Vote 📝</button>
+    </div>
+
+    <!-- Candidate 4 -->
+    <div class="card">
+      <div class="icon">🧠</div>
+      <h3>Quiz App</h3>
+      <p>Votes: <span id="quizVotes">16</span></p>
+      <button id="btnQuiz" class="vote-btn">Vote 🧠</button>
+    </div>
+
+  </div>
+
+  <!-- Footer Section: Total Votes & Feedback -->
+  <div class="footer-card">
+    <h2>Total Votes: <span id="totalVotes">0</span></h2>
+    <div id="feedback" class="feedback-box">✅ Kamu memilih To-Do App 📝</div>
+  </div>
+  
+  <script src="scp.js"></script>
+</body>
+</html>
