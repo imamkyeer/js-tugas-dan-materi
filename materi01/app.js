@@ -112,7 +112,17 @@ console.log(daftarKereta[2]);// data ke 3
 // for (let i = 1; i <= 5; i++) 
 for (let i = 5; i >= 1; i--) {
     console.log(`halo kak ke-${i}`);
+    console.log(`.... akhir negative ke-${i}...`);
+
+
 }
+
+for (let i = 1; i <= 5; i++) {
+    console.log(`halo kak ke-${i}`);
+    console.log(`.... akhir loop ke-${i}...`);
+}
+
+
 
 // cek jumlah data 
 const jumlahKereta = daftarKereta.length;
@@ -121,6 +131,20 @@ for (let x = 0; x < jumlahKereta; x++) {
     const namaKereta = daftarKereta[x];
     console.log(`kereta ${namaKereta}`);
 }
+
+
+const equipments = ['knife', 'fork', 'spoon', 'plate'];
+// manual akses data lewat index
+console.log(equipments[0]);
+console.log(equipments[1]);
+const totalEquipments = equipments.length; // HITUNG TOTAL ITEM di array
+console.log({ totalEquipments });
+for (let i = 0; i < totalEquipments; i++) {
+    console.log(`item ke-${i} adalah ${equipments[i]}`);
+    console.log(`---------end item ke-${1}-------`);
+}
+
+
 
 // object di js, mirip array tapi ada nama key nya 
 const profilSantri = {
